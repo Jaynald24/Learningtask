@@ -1,46 +1,36 @@
 <!DOCTYPE html>
 <html>
-	<head>
+<body>
+
+<p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">
+Click me
+
+<script>
+function mouseDown() {
+  document.getElementById("myP").style.color = "red";
+}
+
+function mouseUp() {
+  document.getElementById("myP").style.color = "green";
+}
+</script>
 	
-		<title>Poems</title>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
-		</head>
-		
-		<style>
-			body {
-				background-image: url('love.jpg');
-				background-repeat: no-repeat;
-				background-size: cover;
-			}
-	
-			.Text {
-				text-align: center;
-				font-family: 'Franklin Gothic Medium', 'Arial Narrow', Tahoma, sans-serif;
-                
-				
-			}
-			.p1 {
-				font-family: monospace;
-				margin-left: 300px ;
-				margin-right: 300px ;
-				font-size: 24px;
-			}
-            mark {
-            background-color: rgb(255,255,255);
-            color: black;
-             }
-		</style>
-		<body>
-			<div class="Text">
-				<h1 style="color: rgb(128, 0, 0);">A Lover's Complaint</h1>
-				<h2 style="color: rgb(255,255,255);">by William Shakespeare </h2>
-			
-				<p class="p1"><mark> A third and shorter narrative poem, A Lover's Complaint, was printed in the first collection of Shakespeare's sonnets. 
-					Most scholars agree now that it was also written by Shakespeare, though that was contested for some time. 
-					The poem tells the story of a young woman who is driven to misery by a persuasive suitor's attempts to seduce her. 
-					It is not regarded by critics to be his finest work.</mark></p>
-			</div>
-		</body>
-	</html>
+<img onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" border="0" src="" alt="Smiley" width="50" height="50
+">
+
+<p></p>
+<p></p>
+
+<script>
+function bigImg(x) {
+  x.style.height = "64px";
+  x.style.width = "64px";
+}
+
+function normalImg(x) {
+  x.style.height = "32px";
+  x.style.width = "32px";
+}
+</script>
+</body>
+</html>
